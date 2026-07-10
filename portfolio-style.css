@@ -1,0 +1,128 @@
+/*
+    CSS for Portfolio/online cv.
+*/
+
+/*
+    variables
+*/
+
+
+
+/* 
+    main tags
+*/
+
+html, body {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+header {
+    padding: 2%;
+    background-image: linear-gradient(to top, whitesmoke, lightgray);
+}
+
+nav {
+    padding: 2%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 5%;
+}
+
+footer {
+    margin-top: 20%;
+    padding: 2%;
+    background-image: linear-gradient(to bottom, whitesmoke, lightgray);
+}
+
+/*
+    custom classes and ids
+*/
+
+#btnTop {
+    position: fixed;
+    left: 90%;
+    background-color: skyblue;
+    box-shadow: 2px 2px 2px black;
+    padding: 10px;
+    border-radius: 10px;
+    top: 90%;
+    color: black;
+    text-decoration: none;
+}
+
+#btnTop:hover {
+    text-decoration: underline;
+}
+
+.navLink, h1, h2, h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    letter-spacing: 0;
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}
+
+#mainNavLink {
+    font-size: 1.2em;
+}
+
+#keySkillsList {
+    list-style-type: none;
+}
+
+
+#portfolioContainer {
+    display: grid;
+    padding: 5%;
+}
+
+.portfolioItem {
+    padding: 5%;
+}
+
+.portfolioItemImage {
+    border-style: solid;
+    border-width: 1px;
+    height: 300px;
+    width: 350px;
+    box-shadow: 2px 2px 2px black;
+}
+
+/*
+    for big screens
+*/
+@media screen and (min-width: 1200px){
+
+    nav {
+        flex-flow: row;
+    }
+
+    #pageLinks {
+        margin-left: 40%;
+        margin-top: 2%;
+    }
+
+    #portfolioContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        padding: 2%;
+    }
+
+}
+
+
+
