@@ -2,12 +2,6 @@
     CSS for Portfolio/online cv.
 */
 
-/*
-    variables
-*/
-
-
-
 /* 
     main tags
 */
@@ -42,10 +36,6 @@ footer {
     padding: 2%;
     background-image: linear-gradient(to bottom, whitesmoke, lightgray);
 }
-
-/*
-    custom classes and ids
-*/
 
 #btnTop {
     position: fixed;
